@@ -1,0 +1,178 @@
+/* home Styles */
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+.main-nav {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: rgba(255, 204, 0, 0.8);
+}
+
+@media (min-width: 768px) {
+    .main-nav {
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+.background_home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/26ea11e5-eba7-4315-97fd-3a4ebc5d7b06.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -1;
+    transition: background-image 0.5s ease;
+}
+
+.title-container {
+    position: absolute;
+    top: 40%; /* Adjusted for better visibility */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Ensure the text is above the background */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Solid background for contrast */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.main-title {
+    font-size: 4em; /* Increased text size */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #ffffff; /* White text color */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Strong shadow for better contrast */
+}
+
+.arrow {
+    font-size: 3em;
+    color: rgba(128, 128, 128, 0.8);
+    cursor: pointer;
+    user-select: none;
+    pointer-events: auto;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    color: rgba(128, 128, 128, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.right-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/* Login Page Styles */
+
+.background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/9d7fab6d-ae1f-46a1-acd1-9022de0b5a9b.jpg');
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(53, 57, 53); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 50px;
+    color: white;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+.login-container input[type="submit"] {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-container .register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Home Page Styles */
+.home-container {
+    text-align: center;
+}
