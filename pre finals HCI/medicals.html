@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meds Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+</head>
+<body class="bodyBG_meds">
+
+    <div class="background_meds"></div>
+
+    <header>
+        <nav class="main-nav">
+            <a href="home_page.html">Home</a> ||
+            <a href="guide_page.html">Guide</a> ||
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="content-container_meds">
+        <div class="left-button-container_meds">
+            <button onclick="showMedsDescription('meds1')">Meds 1</button>
+            <button onclick="showMedsDescription('meds2')">Meds 2</button>
+            <button onclick="showMedsDescription('meds3')">Meds 3</button>
+            <button onclick="showMedsDescription('meds4')">Meds 4</button>
+            <button onclick="showMedsDescription('meds5')">Meds 5</button>
+            <button onclick="showMedsDescription('meds6')">Meds 6</button>
+            <br>
+            <br>
+            <button onclick="window.location.href='guide_page.html'"> Return </button>
+        </div>
+
+        <div id="description_meds" class="description-container_meds">
+            <h2>Description Area</h2>
+            <img id="medsImage" src="" alt="Meds Image" style="display: none; max-width: 100%; height: auto;">
+            <p id="medsDescription">Select an item on the left to see the description here.</p>
+        </div>
+    </div>
+
+</body>
+</html>

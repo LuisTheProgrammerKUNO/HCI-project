@@ -1,8 +1,10 @@
-/* home Styles */
+/* Home Styles */
+.bodyBG_home {
+    background-color: #000;
+}
 
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .main-nav a {
@@ -44,7 +45,6 @@ body {
     .main-nav {
         left: 50%;
         transform: translateX(-50%);
-
     }
 }
 
@@ -64,21 +64,21 @@ body {
 
 .title-container {
     position: absolute;
-    top: 40%; /* Adjusted for better visibility */
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2; /* Ensure the text is above the background */
+    z-index: 2;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Solid background for contrast */
-    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 .main-title {
-    font-size: 4em; /* Increased text size */
-    font-weight: bold; /* Bold font for emphasis */
-    color: #ffffff; /* White text color */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Strong shadow for better contrast */
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
 }
 
 .arrow {
@@ -111,9 +111,7 @@ body {
     right: 20px;
 }
 
-
 /* Login Page Styles */
-
 .background-image {
     position: fixed;
     width: 100%;
@@ -151,7 +149,6 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     box-sizing: border-box;
-    
 }
 
 .login-container input[type="submit"] {
@@ -172,7 +169,259 @@ body {
     margin-top: 20px;
 }
 
+.bodyBG_login {
+    background-color: #000;
+}
+
 /* Home Page Styles */
 .home-container {
     text-align: center;
+}
+
+.background_guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    z-index: -1;
+}
+
+/* Button Container Grid Layout */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 40px;
+    padding: 40px;
+    background-color: #a9a9a9;
+    border: 2px solid #696969;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Button Styling */
+.button-container button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 20px;
+    color: #333;
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.button-container button img {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.button-container button:hover {
+    background-color: #dcdcdc;
+}
+
+/* BG guide_page */
+.background_guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #80808027;
+    z-index: -1;
+}
+
+.bodyBG_guide {
+    background-color: #000;
+}
+
+/* Style for ammo page */
+.bodyBG_ammo {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.background_ammo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/f0aa1782-aac3-4540-99cd-714f1035db6a.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 90vh;
+    margin: 120px auto 0;
+}
+
+.left-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 250px;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #A9A9A9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.left-button-container button {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #D3D3D3;
+    border: 1px solid #696969;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: left;
+    width: 100%;
+}
+
+.left-button-container button:hover {
+    background-color: #B0B0B0;
+    border-color: #505050;
+}
+
+.description-container {
+    flex: 1;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: #d3d3d3;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 75%;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.description-container img {
+    max-width: 90%; /* Increase the maximum width to make the image larger */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image and add space around it */
+    padding: 10px; /* Optional padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
+    border-radius: 10px; /* Optional rounded corners */
+    background-color: #fff; /* Optional background color for better contrast */
+    border: 2px solid #ccc; /* Optional border for styling */
+}
+
+/* Medicals page styles */
+.bodyBG_meds {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.background_meds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/f0aa1782-aac3-4540-99cd-714f1035db6a.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.content-container_meds {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 90vh;
+    margin: 120px auto 0;
+}
+
+.left-button-container_meds {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 250px;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #A9A9A9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.left-button-container_meds button {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #D3D3D3;
+    border: 1px solid #696969;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: left;
+    width: 100%;
+}
+
+.left-button-container_meds button:hover {
+    background-color: #B0B0B0;
+    border-color: #505050;
+}
+
+.description-container_meds {
+    flex: 1;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: #d3d3d3;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 75%;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.description-container_meds img {
+    max-width: 90%; /* Increase the maximum width to make the image larger */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image and add space around it */
+    padding: 10px; /* Optional padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
+    border-radius: 10px; /* Optional rounded corners */
+    background-color: #fff; /* Optional background color for better contrast */
+    border: 2px solid #ccc; /* Optional border for styling */
 }
